@@ -20,7 +20,7 @@ public class Solver {
     private Cell[] cl;
 
     public Solver() {
-        int iterations = 10000;
+        int iterations = 100000;
         int[] coordArry;
         long startTime = System.currentTimeMillis();
 

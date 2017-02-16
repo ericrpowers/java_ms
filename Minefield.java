@@ -23,6 +23,7 @@ public class Minefield {
 
     // Avoid entries with mines and the first selected position
     private void placeMines(int colLength, int rowLength, int mineCount, int Row, int Column) {
+        if (colLength * rowLength <= mineCount) throw new IllegalArgumentException("Number of mines equals or is greater than size of board!");
         int row, column;
         Random random = new Random();
         for (int i = 0; i < mineCount; i++) {
